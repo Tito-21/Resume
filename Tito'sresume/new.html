@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tito SIBO's Portfolio</title>
+  <link rel="stylesheet" href="resume.css" />
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+    }
+    header {
+      background-color: #1c1c1c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    }
+    header strong {
+      color: #00e5ff;
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00e5ff;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #00e5ff;
+    }
+    .hero h2 {
+      color: #1de9b6;
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+    .hero p {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+    .hero button {
+      background-color: #00e5ff;
+      color: #0f0f0f;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .hero button:hover {
+      background-color: #1de9b6;
+    }
+    .hero img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00e5ff;
+      box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+      margin-top: 1rem;
+    }
+    section {
+      padding: 3rem 2rem;
+      background-color: #1a1a1a;
+      margin: 1rem 0;
+      border-left: 5px solid #00e5ff;
+    }
+    section h2 {
+      color: #1de9b6;
+      margin-bottom: 1rem;
+    }
+    section p, section li {
+      font-size: 1.1rem;
+      color: #f0f0f0;
+    }
+    ul {
+      list-style-type: circle;
+      padding-left: 1.5rem;
+    }
+    footer {
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 1rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #00e5ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero img {
+        margin-top: 2rem;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>JD</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Tito SIBO</h1>
+      <h2>Full Stack Web Developer</h2>
+      <p>I build responsive websites and web applications with modern technologies to help businesses grow online.</p>
+      <button onclick="scrollToSection('contact')">Contact Me</button>
+      <button onclick="scrollToSection('projects')">View My Work</button>
+    </div>
+    <img src="/assets/IMG_8072.jpg" alt="Tito SIBO" />
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I am passionate about using technology to empower people—especially in the areas of health, education, and sustainability. I enjoy building software that solves real problems, and I'm especially drawn to machine learning, full-stack web development, and system optimization.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Critical thinking</li>
+      <li>Computer Network</li>
+      <li>Python</li>
+      <li>Git, GitHub, REST APIs</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>Freelance Web Developer</strong> - 2024–Present<br />
+    Built several web apps and websites for small businesses and startups.</p>
+    <p><strong>Network Engineer</strong> - 2023–2024<br />
+      Maintained and monitored company networks and servers for optimal performance, implemented and managed network security and access controls. Troubleshot and resolved hardware, software, and connectivity issues.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p><strong>Health Tracker</strong> - A health monitoring web app using React and Node.js.</p>
+    <p><strong>Portfolio Website</strong> - This site showcasing my work and skills.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>African Leadership University</strong><br />
+    Bachelor of Software Engineering (2024–2027)</p>
+    <p><strong>SOS Technical High School</strong><br />
+      High school Diploma in Networking (2020–2023)</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:t.sibo@alustudent.com">t.sibo@alustudent.com</a></p>
+    <p>Phone: +250 780 345 524</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/tito-sibo-6aa006310/">Tito's LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tito SIBO. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
