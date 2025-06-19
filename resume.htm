@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tito SIBO's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div><strong>JD</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Tito SIBO</h1>
+      <h2>Full Stack Web Developer</h2>
+      <p>I build responsive websites and web applications with modern technologies to help businesses grow online.</p>
+      <button onclick="scrollToSection('contact')">Contact Me</button>
+      <button onclick="scrollToSection('projects')">View My Work</button>
+    </div>
+    <img src="/mnt/data/ef809f69-f38d-4ad9-a7b5-2efbf2e887ef.png" alt="Tito SIBO" />
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I am a passionate developer who loves solving problems with code. I specialize in JavaScript, React, and backend development with Node.js.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Vue.js</li>
+      <li>Node.js, Express.js</li>
+      <li>MongoDB, PostgreSQL</li>
+      <li>Git, GitHub, REST APIs</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>Freelance Web Developer</strong> - 2023–Present<br />
+    Built several web apps and websites for small businesses and startups.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p><strong>Health Tracker</strong> - A health monitoring web app using React and Node.js.</p>
+    <p><strong>Portfolio Website</strong> - This site showcasing my work and skills.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>African Leadership University</strong><br />
+    Bachelor of Software Engineering (2024–2027)</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:t.sibo@alustudent.com">t.sibo@alustudent.com</a></p>
+    <p>Phone: +250 780 345 524</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">your-profile</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tito SIBO. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
